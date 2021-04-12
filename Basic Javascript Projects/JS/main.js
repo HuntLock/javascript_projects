@@ -4,7 +4,7 @@ function My_First_Function(){ //this is a function
     document.getElementById("Pink_Text").innerHTML=result;
 } 
 
-windows.alert("Hello, world!"); //this is an alert
+window.alert("Hello, world!"); //this is an alert
 
 var X= "Hello World"; //variable 1
 
