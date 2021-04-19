@@ -60,5 +60,5 @@ let Batman={
         return "The batman is " + this.identity + " He is a(n) "+ this.skill + " he use a(n) " + this.weapon + " his suit is " + this.color;
     }
 }
-document.getElementById("Batman_Object").innerHTML= Batman.description
+document.getElementById("Batman_Object").innerHTML= Batman.description();
 
