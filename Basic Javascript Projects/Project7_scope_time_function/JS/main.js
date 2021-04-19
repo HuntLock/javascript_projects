@@ -1,13 +1,18 @@
 var X = 10; //global
-function Add_numbers_1(){
-    document.write(20+X+"<br>");
+function Add_numbers_1() {
+    document.write(20 + X + "<br>");
 }
-function Add_numbers_2(){ //local
-    document.write(X+100);
+function Add_numbers_2(){
+    document.write(X + 100 + "<br>");
 }
-Add_numbers_1;
-Add_numbers_2;
+Add_numbers_1();
+Add_numbers_2();
 
+function Add_numbers_1(){ //local
+    var X=10;
+    document.write(20 + X + "<br>");
+}
+Add_numbers_1();
 
 function get_Date(){ //18 hour machine
     if (new Date() .getHours()<18){ //if greater than 18 hours display...
