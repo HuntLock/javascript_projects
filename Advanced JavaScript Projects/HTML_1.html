@@ -31,8 +31,27 @@
 <h3 class="Click">This class will change.</h3>
 <button onclick="Hello_World_Function()">Click me.</button>
 
+<br>
+<br>
 
-<canvas id="myCanvas" width="1000" height="500" style="border:2px solid rgb(0, 0, 0);"></canvas>
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+// Create gradient
+var grd = ctx.createLinearGradient(0, 0, 200, 0);
+grd.addColorStop(0, "red");
+grd.addColorStop(1, "white");
+
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(10, 10, 150, 80);
+</script>
+</script>
+
+
 </body>
 
 

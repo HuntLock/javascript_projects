@@ -45,7 +45,6 @@ function Hello_World_Function(){
     A[1].innerHTML="The text has changed!";
 }
 
-
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
 ctx.beginPath();
