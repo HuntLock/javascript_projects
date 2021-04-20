@@ -66,7 +66,7 @@ function checkWinConditions(){
         const b= selectedSquares.includes(squareB)
         const c= selectedSquares.includes(SquareC)
 
-        if (a===true && b===true && c===true) {return home}
+        if (a===true && b===true && c===true) {return true}
     }   
 }
 
