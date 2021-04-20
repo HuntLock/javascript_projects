@@ -21,11 +21,11 @@ function Input_Digit(digit) {
         }
     }
     
-function Handle_Operator (Next_operator) {
+function Handle_Operator (Next_Operator) {
     const { First_Operand, Display_Value, operator } = Calculator
     const Value_of_Input = parseFloat (Display_Value);
     if (operator && Calculator.Wait_Second_Operand) {
-    Calculator.operator = Next_operator;
+    Calculator.operator = Next_Operator;
     return;
     }
     
@@ -58,9 +58,10 @@ function Calculator_Reset() {
     Calculator.Wait_Second_Operand = false;
     Calculator.operator = null;
     }
-function Update_Display () {
+
+function Update_Display() {
      const display = document.querySelector('.calculator-screen');
-     display.value = Calculator.Display_Value;
+     display.value=Calculator.Display_Value;
     }
     
     
@@ -71,7 +72,7 @@ keys.addEventListener('click', (event) => {
     if (!target.matches ('button')) {
     return;
 }
-if (target.classList.contains ('operator')) {
+if (target.classList.contains('operator')) {
     Handle_Operator (target.value);
     Update_Display();
     return;
